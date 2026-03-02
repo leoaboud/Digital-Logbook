@@ -1,88 +1,72 @@
-✈️ Digital Logbook
+# ✈️ Digital Logbook
 
-📌 Overview
+## 📌 Overview
+Digital Logbook is a backend-focused project designed to simulate a real-world aircraft maintenance reporting system.
 
-Digital Logbook is a backend-focused project developed to simulate a real-world aircraft maintenance reporting system. The main goal is to replace traditional paper-based logbooks with a digital solution that enables real-time communication between flight crew and maintenance teams.
+The system replaces traditional paper-based logbooks with a digital solution, enabling real-time communication between flight crew and maintenance teams.
 
-🎯 Objective
+---
 
-This project is primarily built as a learning platform to improve skills in JavaScript and backend development.
+## 🎯 Objective
 
-Additionally, it aims to address a real operational gap in aviation:
+### 📚 Learning Goal
+This project is primarily built to develop and improve skills in:
 
-Aircraft issues reported during ground operations are often written in physical logbooks or reported late by the captain, causing delays in maintenance response and operational inefficiencies.
+- JavaScript
+- Backend development
+- API design
+- System architecture
 
-The goal is to allow maintenance teams to:
+---
 
-Receive aircraft reports in real time
+### ✈️ Operational Goal
+The project is based on a real deficiency in aviation:
 
-Anticipate issues before aircraft arrival
+> Aircraft issues during ground operations are often recorded in physical logbooks or reported late by the captain.
 
-Improve turnaround efficiency
+This leads to:
+- Delays in maintenance response  
+- Operational inefficiencies  
+- Increased turnaround time  
 
-⚙️ Technologies
-💻 Language
+---
 
-JavaScript (Node.js)
+### 🚀 Solution
+The system aims to:
 
-🧠 Backend Framework
+- Provide **real-time aircraft reporting**
+- Allow maintenance teams to act **before aircraft arrival**
+- Improve communication between cockpit and maintenance
+- Reduce delays and increase operational efficiency
 
-Express.js
+---
 
-🗄️ Database
+## ⚙️ Technologies
 
-MongoDB (NoSQL)
+### 💻 Language
+- JavaScript (Node.js)
 
-🔐 Authentication
+### 🧠 Backend
+- Express.js
 
-JWT (JSON Web Token)
+### 🗄️ Database
+- MongoDB (NoSQL)
 
-🏗️ Project Structure
+### 🔐 Authentication
+- JWT (JSON Web Token)
 
-The system is organized in a modular backend architecture:
+---
 
-Models → Data structure (Mechanic, Aircraft, Maintenance)
+## 🏗️ Project Structure
 
-Controllers → Application logic
-
-Routes → API endpoints
-
-Services → Business rules
-
-Middleware → Authentication and security
-
-Config → Database connection
-
-✈️ Core Features (Planned)
-
-Mechanic registration (ANAC, CIF, skill)
-
-Authentication system (login)
-
-Aircraft registration
-
-Maintenance logging system
-
-Real-time report tracking (future implementation)
-
-🚀 Vision
-
-This project is not just a study exercise. It is based on a real deficiency in aviation operations and aims to evolve into a practical tool that:
-
-Reduces delays in maintenance response
-
-Improves communication between cockpit and maintenance
-
-Modernizes aircraft reporting systems
-
-📚 Learning Focus
-
-Backend architecture
-
-API development
-
-Database modeling
-
-Authentication systems
-
-Clean code and project organization
+```bash
+logbook/
+├── config/        # Database configuration
+├── models/        # Data schemas (Mechanic, Aircraft, Maintenance)
+├── controllers/   # Application logic
+├── routes/        # API endpoints
+├── services/      # Business rules
+├── middleware/    # Authentication and security
+├── utils/         # Validation and helpers
+├── app.js         # App configuration
+└── server.js      # Server entry point
